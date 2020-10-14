@@ -1,12 +1,12 @@
 import {Entity, Column, PrimaryGeneratedColumn} from 'typeorm';
 
-@Entity('ophanages')
+@Entity('orphanages')
 export default class Orphanade{
     @PrimaryGeneratedColumn('increment')
     id: number;
 
     @Column()
-    name: String;
+    name: string;
 
     @Column()
     latitude:number;
@@ -15,12 +15,12 @@ export default class Orphanade{
     longitude:number;
 
     @Column()
-    about:String;
+    about:string;
     @Column()
-    instructions: String;
+    instructions: string;
 
     @Column()
-    opening_hours:String;
+    opening_hours:string;
 
     @Column()
     opening_on_weekends:boolean;
